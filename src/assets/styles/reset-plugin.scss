@@ -1,0 +1,167 @@
+@import "@/config/ui.scss";
+/*
+  element-ui
+  input 组件 背景透明
+*/
+.transparent_select {
+  .el-input__suffix-inner i{
+    color: #fff !important;
+  }
+  input.el-input__inner {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+  }
+}
+
+// 菜单栏
+.el-menu{
+  border-right: 0 !important;
+}
+
+/*
+  element-ui
+  面包屑
+*/
+.current{
+  span.el-breadcrumb__inner{
+    color: $publicColor !important;
+  }
+}
+
+/*
+  表格
+*/
+.el-table{
+  &.no_hover.el-table--enable-row-hover{
+    .el-table__body tr:hover > td{
+      background-color: transparent;
+    }
+  }
+  .el-table__expanded-cell[class*=cell]{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .el-table__header-wrapper{
+    .el-table__header{
+      .has-gutter tr th{
+        background-color: #fafafa;
+        color: #666;
+      }
+    }
+  }
+  .show_more>.cell{
+    overflow: visible;
+  }
+}
+
+/*
+  表单
+*/
+.el-form{
+  color: #606266;
+  .el-form-item{
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    .el-form-item{
+      margin-bottom: 22px !important;
+      &:last-of-type{
+        margin-bottom: 0 !important;
+      }
+    }
+    .el-table__header-wrapper{
+      line-height: normal;
+    }
+    &.border_form_item{
+      $headerHeight: 40px; // 头部按钮块的高度尺寸
+      $headerWidth: 340px; // 头部宽度
+      &.is-error>.el-form-item__content{
+        border-color: $dangerColor;
+      }
+      &>.el-form-item__content{
+        border: 1px solid $infoBorderColor;
+        padding: 10px 15px;
+        border-radius: 4px;
+        transition: all .15s;
+        overflow: hidden;
+        &:hover{
+          border-color: $infoBorderColor / 1.1;
+        }
+        // 头部按钮
+        .headers_btns{
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 4px 0 0 0;
+          background-color: #E6A23C;
+          color: #fff;
+          width: $headerWidth;
+          height: $headerHeight;
+          line-height: $headerHeight;
+          z-index: 1;
+          padding-left: 20px;
+          padding-right: 20px;
+          button{
+            color: #fff;
+            padding: 0px 0;
+            margin-left: 0;
+            margin-right: 8px;
+            &:hover{
+              color: #000;
+            }
+          }
+          &>span{
+            margin-right: 8px;
+            cursor: default;
+          }
+        }
+      }
+      &.is_hidden>.el-form-item__content{
+        width: $headerWidth;
+        padding: 0px !important;
+        height: $headerHeight;
+        overflow: hidden;
+      }
+      &.padding_headers{
+        &>.el-form-item__content{
+          padding-top: $headerHeight + $headerHeight / 4;
+        }
+      }
+    }
+    &.is-success{
+      .el-input__inner,
+      .el-input__inner:focus,
+      .el-textarea__inner,
+      .el-textarea__inner:focus{
+        border-color: $infoBorderColor !important;
+      }
+    }
+  }
+  &.el-form--inline{
+    &.table_form{
+      .el-form-item{
+        margin-top: $mainPadding / 1.5;
+        margin-bottom: $mainPadding / 1.5;
+        margin-right: 26px;
+        &:last-of-type{
+          margin-right: 0;
+        }
+        .el-form-item__label{
+          padding-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+.el-input-number .el-input__inner{
+  text-align: left !important;
+}
+
+.el-submenu.is-active .el-submenu__title{
+  color: #1890ff !important;
+  i{
+    color: #1890ff !important
+  }
+}

@@ -1,0 +1,382 @@
+html,body{
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+}
+.publicView > div{
+  background: white;
+  padding: 10px;
+}
+
+/*
+  绝对定位居中
+*/
+.absolute_center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/*
+  定义相对定位
+*/
+.relative {
+  position: relative
+}
+
+/*
+  宽度铺满
+*/
+.full_width{
+  width: 100% !important;
+}
+
+/*
+  高度铺满
+*/
+.full_height{
+  height: 100%;
+}
+
+/*
+  鼠标点击手势
+*/
+.pointer{
+  cursor: pointer;
+}
+
+/*
+  文字居中
+*/
+.text_center{
+  text-align: center;
+}
+
+/*
+  文字左对齐
+*/
+.text_left{
+  text-align: left;
+}
+
+/*
+  文字右对齐
+*/
+.text_right{
+  text-align: right;
+}
+
+/*
+  文字强制不换行
+*/
+.word_nowrap{
+  word-wrap: normal;
+}
+
+/*
+  右浮动
+*/
+.float_right{
+  float: right;
+}
+
+/*
+  左浮动
+*/
+.float_left{
+  float: left;
+}
+
+/*
+  清除浮动
+*/
+.cl{
+  zoom:0;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+/*
+  上边距
+*/
+.margin_top_5{
+  margin-top: 5px;
+}
+.margin_top_10{
+  margin-top: 10px;
+}
+.margin_top_15{
+  margin-top: 15px;
+}
+.margin_top_20{
+  margin-top: 20px;
+}
+.margin_top_30{
+  margin-top: 30px;
+}
+.margin_top_40{
+  margin-top: 40px;
+}
+
+/*
+  下边距
+*/
+.margin_bottom_5{
+  margin-bottom: 5px;
+}
+.margin_bottom_10{
+  margin-bottom: 10px;
+}
+.margin_bottom_15{
+  margin-bottom: 15px;
+}
+.margin_bottom_25{
+  margin-bottom: 20px;
+}
+#margin_bottom_0{
+  margin-bottom: 0px !important;
+}
+/*
+  右边距
+*/
+.margin_right_5{
+  margin-right: 5px;
+}
+.margin_right_10{
+  margin-right: 10px;
+}
+.margin_right_15{
+  margin-right: 15px;
+}
+.margin_right_20{
+  margin-right: 20px;
+}
+
+/*
+  左边距
+*/
+.margin_left_5{
+  margin-left: 5px;
+}
+.margin_left_10{
+  margin-left: 10px !important;
+}
+.margin_left_15{
+  margin-left: 15px;
+}
+.margin_left_20{
+  margin-left: 20px;
+}
+.margin_left_35{
+  margin-left: 35px
+}
+
+/*
+  清空边距
+*/
+.padding_0{
+  padding: 0 !important;
+}
+
+/*
+  白色内容
+*/
+.background_white{
+  background-color: #fff !important;
+}
+
+// 边距
+.padding_20{
+  padding: 20px;
+}
+
+/*
+  左内边距
+*/
+.padding_left_8{
+  padding-left: 8px;
+}
+.padding_left_15{
+  padding-left: 15px;
+}
+.padding_left_20{
+  padding-left: 20px;
+}
+.padding_left_30{
+  padding-left: 30px;
+}
+
+/*
+  右内边距
+*/
+.padding_right_8{
+  padding-right: 8px;
+}
+.padding_right_10{
+  padding-right: 10px;
+}
+
+/*
+  上内边距
+*/
+.padding_top_8{
+  padding-top: 8px;
+}
+.padding_top_15{
+  padding-top: 15px;
+}
+.padding_top_20{
+  padding-top: 20px;
+}
+
+/*
+  下内边距
+*/
+.padding_bottom_10{
+  padding-bottom: 10px;
+}
+.padding_bottom_15{
+  padding-bottom: 15px;
+}
+.padding_bottom_20{
+  padding-bottom: 20px;
+}
+
+// 宽度
+.width_300{
+  width: 300px !important;
+}
+
+/*
+  最大宽度
+*/
+.max_width_50{
+  max-width: 50px;
+}
+.max_width_100{
+  max-width: 100px;
+}
+.max_width_150{
+  max-width: 150px;
+}
+.max_width_260{
+  max-width: 260px;
+}
+.max_width_293{
+  max-width: 293px;
+}
+.max_width_300{
+  max-width: 300px;
+}
+.max_width_375{
+  max-width: 375px;
+}
+.max_width_390{
+  max-width: 390px;
+}
+.max_width_485{
+  max-width: 485px;
+}
+.max_width_600{
+  max-width: 600px;
+}
+.max_width_900{
+  max-width: 900px;
+}
+.max_width_1000{
+  max-width: 1000px;
+}
+.width_auto{
+  width: auto;
+}
+/*
+  display 行块
+*/
+.inline_block{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
+
+
+/*
+  字体灰色
+*/
+.text_gray{
+  color: #bbb !important;
+}
+.text_deep_gray{
+  color: #999 !important;
+}
+
+/*
+  字体浅绿
+*/
+.text_light_blue{
+  color: #99a9bf;
+}
+
+/*
+  字体单行溢出隐藏
+*/
+.text_single_overflow{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.text_single_overflow_3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/*
+  行距
+*/
+.line_height_normal{
+  line-height: normal;
+}
+.line_height_mini{
+  line-height: 22px;
+}
+.line_height_medium{
+  line-height: 36px;
+}
+
+/*
+ 文字强制不换行
+*/
+.text_nowrap{
+  white-space: nowrap;
+}
+
+/*
+  文字大小
+*/
+.font_size_mini{
+  font-size: 13px;
+}
+
+/*
+  垂直居中
+*/
+.vertical_middle{
+  vertical-align: middle;
+}
+
+/*
+  边框
+*/ 
+.grayBorder{
+  border: 1px solid #ebeef5;
+}
